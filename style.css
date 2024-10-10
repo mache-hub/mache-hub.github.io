@@ -1,0 +1,121 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("https://awsdatabase.s3.us-east-2.amazonaws.com/mach-e-cyber-orange.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: system-ui, sans-serif;
+  }
+
+  form {
+    background: #faf5f3;
+    position: absolute;
+    padding: 60px 60px 80px;
+    opacity: 0.9;
+  }
+
+  .wrapper {
+    height: 60vh;
+  }
+  
+  .flex_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  form h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    color: #432e2d; /* Replaced darken(#4e3332, 10%) */
+    letter-spacing: 0.061em;
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    form {
+      width: 60%;
+      
+    }
+    }
+
+input, select {
+   -webkit-appearance: none;
+ }
+
+  
+  input, select { 
+    width: 100%; 
+    background: #fff;
+    text-align: center !important;
+    margin-bottom: 25px;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #e0dad8; /* Replaced $gray-dk */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    z-index: 500;
+    letter-spacing: 0.06em;
+  }
+  
+  input:focus, select:focus {
+    border: 1px solid #e0dad8; /* Replaced $gray-dk */
+    outline: none;
+    appearance: none;
+  }
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  
+  .submit {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+    z-index: 500;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;
+    background: #ec7242;
+    color: #fff;
+    width: 101%;
+    transition: 0.8s all ease;
+  }
+  
+  .submit:hover {
+    background: #d6673c;
+    transform: translateY(1px);
+    transition: 0.4s all ease;
+  }
+  
+  #region {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: fixed; /* Use fixed positioning to keep the footer at the bottom */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Ensures it stays centered horizontally */
+    width: 100%; /* Ensure the footer takes full width */
+    z-index: 1;
+}
+
+  

@@ -1,0 +1,168 @@
+html,
+body {
+  overflow: hidden; /* Prevent default scrollbars */
+  overflow-y: scroll; /* Allow vertical scrolling without a scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("https://awsdatabase.s3.us-east-2.amazonaws.com/mache-grabber-blue.jpg")
+      no-repeat center top;
+  background-size: cover;
+  font-family: system-ui, sans-serif;
+}
+
+button.btn-close {
+  display: none;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none !important;
+}
+
+/* Toast Container */
+.custom-toast {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #23262b; /* Dark background color */
+  border: 1px solid #23262b; /* Border matching background */
+  color: #fff; /* White text */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Toast Body */
+.custom-toast-body {
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.circle {
+  display: flex; /* Use Flexbox for centering */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  height: 59px; /* Height of the circle */
+  width: 59px; /* Width of the circle */
+  border-radius: 50%; /* Perfect circle */
+  opacity: 0.8;
+  margin: 0 auto; /* Ensure it's centered in its container */
+}
+
+.circle-quill {
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.quill {
+  height: 24px;
+}
+
+
+
+form {
+  background: #faf5f3;
+  padding: 40px 55px 50px;
+  opacity: 0.9;
+}
+
+form h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 17px;
+  color: #432e2d; /* Replaced darken(#4e3332, 10%) */
+  letter-spacing: 0.061em;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+input {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  text-align: center !important;
+  margin-bottom: 25px;
+  box-shadow: none;
+  border: none;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #e0dad8; /* Replaced $gray-dk */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 13px;
+  position: relative;
+  z-index: 500;
+  letter-spacing: 0.06em;
+}
+
+input:focus {
+  border: 1px solid #e0dad8; /* Replaced $gray-dk */
+  outline: none;
+  appearance: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+::-webkit-scrollbar { display: none; }
+
+.btn-primary {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+  z-index: 500;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  background: #2b6be4;
+  color: #fff;
+  width: 101%;
+  transition: 0.8s all ease;
+  border-radius: 0;
+}
+
+a.email-us {
+  color: #0391F6;
+}
+
+a.email-us:hover {
+  color: #35aafd;
+}
+
+p.form-disclaimer {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.btn-primary:hover {
+  background: #174eb5;
+  transform: translateY(1px);
+  transition: 0.4s all ease;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  line-height: 19px;
+  position: fixed; /* Use fixed positioning to keep the footer at the bottom */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Ensures it stays centered horizontally */
+  width: 100%; /* Ensure the footer takes full width */
+  z-index: 1;
+}
